@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSCI 1300 - Development</title>
+    <style>
+        @font-face {
+            font-family: 'Nunito';
+            src: url('assets/fonts/Nunito/static/Nunito-Regular.ttf');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> CSCI 1300 - Assignment 3 - Development </h1>
+    <h2> <a href="https://csci1300-development.vercel.app/" target="_blank">Check out my app!</a></h2>
+    <h2> Purpose </h2>
+    <p> The purpose of this assignment is to practice using React to create a basic app with a filtering, aggregating, and sorting function.
+         </p>
+    <h2> My app </h2>
+    <p> For my app, I decided to create a music playlist maker. I listen to music from a lot of different genres, so I created a filter
+        for selecting songs of a particular language to add to the playlist. I also added a slider filter for song duration, which can be helpful for
+        identifying short vs. long songs. Finally, I added a sorting functionality for duration, to order songs from shortest to longest. When adding songs
+        to the playlist, the total length of the playlist is also shown. 
+    </p>
+    <img src="assets/screenshots/app1.png" alt="App screenshot 1 - shows a list of cards corresponding to songs on the left and a blank playlist on the right. A transparent box containing various filters and sorts is shown on top">
+    <img src="assets/screenshots/app2.png" alt="App screenshot 2 - shows a list of cards corresponding to songs on the left and a playlist with a few songs on the right. A transparent box containing various filters and sorts is shown on top. Cards have a remove playlist button if their songs are in the playlist. ">
+    <h2> Lessons learned </h2>
+    <p>
+        Building the app taught me the fundamentals of UI components. I used Chakra UI as a component library for this project, and I found it interesting how having a component library allows for a lot of flexibility without having to write a lot of CSS. One of the challenges for me was keeping track of several useState hooks. For example, when adding a song to the playlist, not only is the list of songs shown on the right modified, but also the total duration count must be changed and the song card button's text going from "Add to Playlist" to "Remove from Playlist". This exercise made me realize how multiple aspects of the UI can rely on the same state object.
+    </p>
+    <h2>
+        Future Steps
+    </h2>
+    <p>
+        If I had more time, I would work on making my app more compatible for different devices. It took a lot of time creating the layout I wanted to the app and setting up all the functionality.
+    </p>
+    
+</body>
